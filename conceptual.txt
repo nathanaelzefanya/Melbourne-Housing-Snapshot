@@ -1,0 +1,26 @@
+Latar belakang adanya bagging dan cara kerja bagging
+
+Bagging adalah singkatan dari Bootstrap Aggregating dan sering disebut juga bootstraping. Proses ini merupakan alogritma ensamble dalam machine learning untuk 
+mengurangi varians pada suatu dataset sesuai dengan model yang dimiliki (baik dalam proses regresi maupun klasifikasi). Bagging dilakukan karena adanya model yang sensitif dengan data training, 
+sehingga menyebabkan nilai sangat bervariasi. Dengan adanya Bagging, hasil model dapat lebih baik dan akurat.
+
+Cara kerja bagging adalah:
+a. Bootstrapping: melakukan teknik pengambilan sampel untuk membuat sampel yang beragam. Metode pengambilan sampel 
+ini menghasilkan subset yang berbeda dari kumpulan data pelatihan. 
+b. Paralel Training: Melatih sample bootstrap secara independen dan paralel satu sama lain dengan model training yang sama.
+c. Aggregation: Mengambil rata-rata prediksi dari seluruh hasil model training pada Regresi, atau 
+mengambil prediksi berdasarkan hasil yang paling banyak muncul pada Klasifikasi.
+
+Perbedaan cara kerja algoritma Random Forest dengan algoritma boosting yang dipilih
+
+Saya memilih Gradient Boosting. Perbedaan cara kerjanya adalah:
+a. Random Forest melakukan training secara independen dan dilakukan secara paralel, sedangkan Gradient Boosting melakukan training secara berurutan.
+b. Random Forest fokus untuk mengurangi varians, sedangkan Gradient Boosting cenderung mengurangi bias.
+c. Random Forest mengambil hasil rata-rata pada proses regresi, dan mengambil hasil mayoritas pada proses klasifikasi. 
+Sedangkan Gradient Boosting melakukan agregasi prediksi seluruh hasil training.
+
+3. Jelaskan apa yang dimaksud dengan Cross Validation !
+
+Cross Validation adalah sebuah teknik untuk melakukan evaluasi performa model machine learning. Teknik ini bertujuan untuk mengetahui performa model
+saat model tersebut dilatih pada data yang baru / tidak pernah terlihat sebelumnya. Teknik ini juga membantu untuk memperlihatkan model mana yang terbaik dan 
+dapat melakukan peningkatan performa melalui hyperparameter turning.
