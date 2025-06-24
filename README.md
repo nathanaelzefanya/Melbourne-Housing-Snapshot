@@ -3,7 +3,7 @@
 ## Repository Outline
 Project ini terdiri dari file:
 ```
-1. description.md - Penjelasan gambaran umum project
+1. README.md - Penjelasan gambaran umum project
 2. notebook.ipynb - Notebook yang berisi pengolahan data dengan python
 3. dataset.csv - Dataset yang digunakan dalam project
 4. inference.ipynb - File inference yang digunakan untuk melakukan prediksi
